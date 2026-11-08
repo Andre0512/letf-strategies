@@ -1,0 +1,23 @@
+# Examples for recomputing the recipes
+
+All numbers in examples/ are invented and say nothing about markets, products or the future; do not report them as results of a strategy.
+
+This repository neither contains nor names market, index or product data.
+
+Each package under examples/ has four files: input.csv, recompute.py, output.csv and README.md. The README describes the recipe in numbered steps. The file output.csv is the reference output.
+
+The package examples/sma-signal/ recomputes the moving-average trend rule with a buffer day by day: line, market state, trading costs, money-market interest and value curve.
+
+The package examples/rebalancing/ recomputes rebalancing two products to a fixed target weight day by day, in one run by date and one run by date and band: unit counts, equity share, deadline, band and value curve.
+
+The package examples/leverage-model/ recomputes the price of a leveraged product before its launch day by day, with the daily reset of the leverage.
+
+The public repository is https://github.com/Andre0512/letf-strategies.
+
+1. Read the recipe in the package README (README.md) of an example package.
+2. Implement the recipe in your own code and run it on input.csv.
+3. Check your result against the reference output in output.csv.
+
+To compare the script output line by line: python3 recompute.py input.csv > result.csv, then diff result.csv output.csv; if diff prints nothing, every line matches.
+
+Keep to the invented input; the recipe shows how the numbers are built, nothing more.

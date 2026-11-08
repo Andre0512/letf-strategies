@@ -1,0 +1,22 @@
+{
+  "note": "Register der Märkte für den Container :::market. Regionen sind die Ebene, auf der das Backend seine Presets führt (definition_ids, strategy_preset_slugs.json); Länder liegen darunter und werden im Frontend aus der Herkunft der Leserin erkannt. Ein Block für eine Region gilt auch für jedes Land dieser Region, ein Block für ein Land nur für dieses Land. Unter eu stehen seit S11 Deutschland, Österreich und Frankreich; eine Leserin in der Region eu ohne erkanntes Land ist der Fall Sonstige EU, und wie das Frontend ihn beschriftet, steht nicht hier. Für die Übergangszeit liest das Frontend sie als de (fallback_country); deshalb darf deutsches Steuerrecht heute schon de tragen, obwohl at und fr dieselbe Region sind.",
+  "source": {
+    "document": "welle-s11-content",
+    "date": "2026-09-13"
+  },
+  "regions": [
+    {
+      "code": "eu",
+      "countries": [
+        "at",
+        "de",
+        "fr"
+      ],
+      "fallback_country": "de"
+    },
+    {
+      "code": "us",
+      "countries": []
+    }
+  ]
+}

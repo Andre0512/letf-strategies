@@ -1,0 +1,4 @@
+date,daily_return,price,price_saved,direction
+1923-01-02,0.0,100.0,100.0,echt
+1923-01-03,0.5,150.0,150.0,vorwaerts
+1923-01-04,-0.25,112.6,112.6,vorwaerts

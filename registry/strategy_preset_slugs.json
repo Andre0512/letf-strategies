@@ -1,0 +1,27 @@
+{
+  "generated_by": "scripts/sync_preset_slugs.py",
+  "source": {
+    "repo": "finance_api",
+    "file": "strategy_presets.json",
+    "commit": "5cdf8bb36420cf557ff1704672ee884cc41f0590",
+    "export_version": 1,
+    "export_source": "alerts/strategies.py TRACKER_PRESETS + tracking/preset_registry.py"
+  },
+  "slugs": {
+    "eu": [
+      "HFEA__50_50__QUARTERLY__IE00BSKRJZ44",
+      "SMA__MSCI_ACWI__NETR__200__B0__LU3386643970",
+      "SMA__MSCI_USA__NETR__200__B0__FR0010755611",
+      "SMA__MSCI_WORLD__NETR__255__B0__FR0014010HV4",
+      "SMA__NDX__NETR__220__B0__FR0010342592",
+      "SMA__SPX__NETR__200__B0__LU0411078552"
+    ],
+    "us": [
+      "HFEA__55_45__QUARTERLY__US25460G1388",
+      "SMA__NDX__GRTR__220__B0__US74347R2067",
+      "SMA__NDX__GRTR__220__B0__US74347X8314",
+      "SMA__SPX__GRTR__200__B0__US25459W8626",
+      "SMA__SPX__GRTR__200__B0__US74347X8645"
+    ]
+  }
+}

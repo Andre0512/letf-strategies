@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Frontmatter und Markdown prüfen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: PyYAML installieren
+        run: pip install "pyyaml==6.*"
+
+      - name: Frontmatter prüfen
+        run: python scripts/check_frontmatter.py
+
+      - name: Tests des Prüf-Skripts
+        run: python -m unittest discover -s tests -v
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Markdown-Lint
+        run: npx --yes markdownlint-cli2@0.14.0

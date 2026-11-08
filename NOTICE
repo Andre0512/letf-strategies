@@ -1,0 +1,23 @@
+NOTICE: third party material
+
+The licenses of this repository, CC BY 4.0 (see LICENSE) for content and MIT
+(see LICENSE-CODE) for code, apply only to the own texts and the own code of
+LETF.io. They do not apply to third party material.
+
+Expressly excluded from both licenses are:
+
+- quotes and excerpts from third party sources;
+- sources that are linked or named, such as podcasts, Reddit posts, forums,
+  blogs, papers and issuer documents;
+- data, tables and graphics of third parties;
+- trademarks and product names as well as index names.
+
+Material from ChemicalStats stands under its own license (CC BY-NC) and is used
+only under its terms.
+
+For every source, what stands in its frontmatter under `license` and
+`may_reproduce` applies. Whoever reuses third party material needs the
+permission of the respective rights holder or a statutory exception (such as
+the right to quote).
+
+This notice is not legal advice.

@@ -1,0 +1,25 @@
+{
+  "note": "Vorläufige Liste der Deskriptor-Schlüssel für :::parameter-Karten und die parameter-Angabe der :::chart-Container. Quelle ist der Vertrag im Plan strategy-pages-v2-plan.md, Abschnitt 10, ergänzt um signal_series und cashflow_policy aus Welle S6c. Sie bleibt die Vertragsliste, bis S2 die parameter_descriptors aus der Definition exportiert; dann wird sie gegen den Export abgeglichen und ersetzt.",
+  "source": {
+    "document": "strategy-pages-v2-plan.md",
+    "section": "10",
+    "date": "2026-09-04"
+  },
+  "keys": [
+    "band.slot_bond",
+    "band.slot_equity",
+    "cashflow_policy",
+    "confirmation_days",
+    "currency_basis",
+    "enter_buffer_pct",
+    "execution_lag_days",
+    "exit_buffer_pct",
+    "price_basis",
+    "rebalance_period",
+    "rebalance_trigger",
+    "signal_series",
+    "weight.slot_bond",
+    "weight.slot_equity",
+    "window"
+  ]
+}

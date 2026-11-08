@@ -1,0 +1,23 @@
+{
+  // Markdown-Lint für Erklärtexte, nicht für Code-Dokumentation.
+  "config": {
+    "default": true,
+    // Zeilenlänge 120; Tabellen und Code-Blöcke bleiben unangetastet.
+    "MD013": {
+      "line_length": 120,
+      // Überschriften dürfen so lang sein wie Zeilen (Voreinstellung wäre 80).
+      "heading_line_length": 120,
+      "tables": false,
+      "code_blocks": false
+    },
+    // Gleichnamige Überschriften auf verschiedenen Ebenen sind in den
+    // Strategie-Seiten erwünscht (z. B. "Quellen" pro Abschnitt).
+    "MD024": { "siblings_only": true },
+    // Voreinstellung ohne Punkt: der Erfunden-Hinweis der Beispiele ist ein ganzer Satz.
+    "MD026": { "punctuation": ",;:!。，；：！" },
+    // Aufzählungen dürfen im Fließtext ohne Leerzeile enden.
+    "MD032": true
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**", "LICENSE", "LICENSE-CODE"]
+}
